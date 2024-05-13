@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="desktop-nav">
+    <div class="logo">Korir <span>Ke</span></div>
+    <div>
+     <ul class="nav-links">
+            <li> <a href="#about">About</a> </li>
+            <li> <a href="#experience">Experince</a> </li>
+            <li> <a href="#projects">Projects</a> </li>
+            <li><a href="#contact">Contact</a>  </li>
+     </ul>
+    </div>
+</nav>
+<nav id="hamburger-nav">
+<div class="logo">Brian Korir</div>
+<div id="hamburger-menu"></div>
+<div class="hamburger-icon" onclick="toggleMenu()">
+    <span></span>
+</div>
+<div class="menu-links">
+
+      <li> <a href="#about" onclick="toggleMenu()">About</a> </li>
+      <li> <a href="#experience" onclick="toggleMenu()">Experience</a> </li>
+      <li> <a href="#projects" onclick="toggleMenu()">Projects</a> </li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a> </li>
+</div>
+</div>
+</nav>
+<section id="profile">
+<div class="selection_ pic-container">
+    <img src="./images/IMG_20240123_102550_HDR.jpg">
+  </div>
+<div class="selection__text">
+    <p class="selection__text"> Hello, I'm </p>
+    <h1 class="title"> <b> Brian Korir</b></h1>
+    <p class="selection__text__p2">Software Engineer</p>
+    <div class="btn-container">
+        <button
+        class="btn btn-color-2"
+        onclick="window.open('./images/Korir CVA.docx')">
+        Download CV
+    </button>
+    <button class="btn btn-color-1" onclick="location.href='./#contact'">
+        Contact Info
+    </button>
+    </div>
+    <div id ="socials-container">
+        <img src="./docs/linkedin.png" alt="My linkedin profile"
+        class="icon"
+        onclick="location.href='https://linkedin.com/in/BrianKorir'"> 
+    <img src="./docs/github.png" alt="My github profile" class=" icon"
+    onclick=""location.href='https://github.com/Brian-Korir'">
+    </div>
+</div>  
+</section>
+
+<section id="about">
+    <p class="section__text__p1">Get to Know More</p>
+    <h1 class="title"> About Me </h1>
+    <div class="section__pic-container">
+
+
+    <img 
+    src="./docs/IMG_20240123_102550_HDR.jpg" alt="Profile picture" class="about-pic">
+  </div>
+
+  
+  <div class="about-details-container">
+    <div class="about-containers">
+        <div class="about-containers">
+            </div class="details-container">
+
+      <img src="./docs/experience.png" alt="Experience icon"
+      class="icon">
+
+      <h3>Intermediate<p><b></b>2 Years in Backend and  Frontend Developement</b></p></h3>
+    </div>
+  </div>
+</section>
+</body>
+</html>
