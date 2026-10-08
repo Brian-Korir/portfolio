@@ -3,143 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10271f">
+    <meta name="description" content="Brian Korir is a software engineer based in Nairobi, Kenya, focused on backend and frontend development.">
     <title>Brian Korir | Software Engineer</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-
-    <!-- Desktop navigation -->
-    <nav id="desktop-nav">
-        <div class="logo">Korir <span>Ke</span></div>
-        <div>
+    <header class="site-header">
+        <nav id="desktop-nav" class="nav-bar" aria-label="Main navigation">
+            <a class="logo" href="#profile" aria-label="Brian Korir home">Korir<span>.</span></a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Mobile navigation -->
-    <nav id="hamburger-nav">
-        <div class="logo">Brian Korir</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <ul>
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Profile -->
-    <section id="profile">
-        <div class="selection__pic-container">
-            <img src="./docs/IMG_20240123_102550_HDR.jpg" alt="Brian Korir">
-        </div>
-        <div class="selection__text">
-            <p class="selection__text">Hello, I'm</p>
-            <h1 class="title"><b>Brian Korir</b></h1>
-            <p class="selection__text__p2">Software Engineer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2"
-                    onclick="window.open('./docs/Korir-CV.docx')">
-                    Download CV
+        <nav id="hamburger-nav" class="nav-bar" aria-label="Main navigation">
+            <a class="logo" href="#profile" aria-label="Brian Korir home">Korir<span>.</span></a>
+            <div class="hamburger-menu">
+                <button class="hamburger-icon" type="button" aria-label="Open navigation menu"
+                    aria-expanded="false" aria-controls="mobile-menu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </button>
-                <button class="btn btn-color-1"
-                    onclick="location.href='./#contact'">
-                    Contact Info
-                </button>
-            </div>
-            <div id="socials-container">
-                <img src="./docs/linkedin.png" alt="My LinkedIn profile" class="icon"
-                    onclick="location.href='https://linkedin.com/in/BrianKorir'">
-                <img src="./docs/github.png" alt="My GitHub profile" class="icon"
-                    onclick="location.href='https://github.com/Brian-Korir'">
-            </div>
-        </div>
-    </section>
-
-    <!-- About -->
-    <section id="about">
-        <p class="section__text__p1">Get to Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section__pic-container">
-            <img src="./docs/IMG_20240123_102550_HDR.jpg" alt="Profile picture" class="about-pic">
-        </div>
-
-        <div class="about-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <img src="./docs/experience.png" alt="Experience icon" class="icon">
-                    <h3>Intermediate</h3>
-                    <p><b>2 Years in Backend and Frontend Development</b></p>
+                <div class="menu-links" id="mobile-menu">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="details-container">
-                <p>
-                    I'm Brian Korir, a passionate Software Engineer based in Nairobi, Kenya.
-                    With 2 years of experience in backend and frontend development,
-                    I specialize in working with large volumes of data as an administrator,
-                    using MongoDB and Python libraries to tabulate data into a form that is
-                    user-friendly for end users. I'm constantly learning and exploring new
-                    technologies in the tech world to deploy them in my projects.
-                </p>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile" aria-labelledby="hero-title">
+            <div class="selection__pic-container">
+                <img src="./docs/IMG_20240123_102550_HDR.jpg" alt="Portrait of Brian Korir">
             </div>
-        </div>
+            <div class="selection__text">
+                <p class="hero-eyebrow">Software engineer · Nairobi, Kenya</p>
+                <h1 class="title" id="hero-title">Brian Korir</h1>
+                <p class="hero-role">Building thoughtful digital experiences.</p>
+                <p class="hero-description">
+                    I work across backend and frontend development, turning complex data into
+                    useful, user-friendly tools.
+                </p>
+                <div class="btn-container">
+                    <a class="btn btn-color-2" href="./docs/Korir%20CVA.docx" download="Brian-Korir-CV.docx">
+                        Download CV
+                    </a>
+                    <a class="btn btn-color-1" href="#contact">Contact me</a>
+                </div>
+                <div id="socials-container" aria-label="Social profiles">
+                    <a class="social-link" href="https://www.linkedin.com/in/brian-korir-467521363/"
+                        target="_blank" rel="noopener noreferrer" aria-label="Brian Korir on LinkedIn">
+                        <img src="./docs/linkedin.png" alt="" class="icon">
+                    </a>
+                    <a class="social-link" href="https://github.com/Brian-Korir"
+                        target="_blank" rel="noopener noreferrer" aria-label="Brian Korir on GitHub">
+                        <img src="./docs/github.png" alt="" class="icon">
+                    </a>
+                </div>
+            </div>
+        </section>
 
-        <img src="./docs/ARROW.png" alt="Scroll to experience" class="icon"
-            onclick="location.href='./#experience'">
-    </section>
-
-    <!-- Experience -->
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <!-- Add your frontend skills here -->
-                        </article>
+        <section id="about" aria-labelledby="about-title">
+            <div class="section-heading">
+                <p class="section__text__p1">A little about me</p>
+                <h2 class="title" id="about-title">About me</h2>
+            </div>
+            <div class="about-layout">
+                <img src="./docs/IMG_20240123_102550_HDR.jpg" alt="Brian Korir" class="about-pic">
+                <div class="about-copy">
+                    <div class="details-container">
+                        <img src="./docs/experience.png" alt="" class="experience-icon">
+                        <h3>Experience</h3>
+                        <p>2 years in backend and frontend development</p>
+                    </div>
+                    <div class="details-container">
+                        <h3>My approach</h3>
+                        <p>
+                            I'm Brian Korir, a passionate software engineer based in Nairobi, Kenya.
+                            I work with large volumes of data, using MongoDB and Python libraries
+                            to organize information into clear, user-friendly experiences. I'm
+                            always learning and exploring new technologies to bring into my projects.
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+            <a class="scroll-link" href="#experience">Explore my experience ↓</a>
+        </section>
 
-    <!-- Projects -->
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <!-- Add your project cards here -->
-        </div>
-    </section>
+        <section id="experience" aria-labelledby="experience-title">
+            <div class="section-heading">
+                <p class="section__text__p1">What I work with</p>
+                <h2 class="title" id="experience-title">Experience</h2>
+            </div>
+            <div class="experience-details-container">
+                <div class="details-container">
+                    <h3 class="experience-sub-title">Development</h3>
+                    <div class="article-container">
+                        <div class="skill-item">Frontend development</div>
+                        <div class="skill-item">Backend development</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">MongoDB</div>
+                        <div class="skill-item">Data processing</div>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h3 class="experience-sub-title">How I add value</h3>
+                    <p>
+                        I combine practical software development with a focus on making complex
+                        information easier to work with for end users.
+                    </p>
+                </div>
+            </div>
+            <a class="scroll-link" href="#projects">See selected projects ↓</a>
+        </section>
 
-    <!-- Contact -->
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div id="socials-container">
-            <img src="./docs/linkedin.png" alt="My LinkedIn profile" class="icon"
-                onclick="location.href='https://www.linkedin.com/in/brian-korir-467521363/'">
-            <img src="./docs/github.png" alt="My GitHub profile" class="icon"
-                onclick="location.href='https://github.com/Brian-Korir'">
-        </div>
-    </section>
+        <section id="projects" aria-labelledby="projects-title">
+            <div class="section-heading">
+                <p class="section__text__p1">A few things I've worked on</p>
+                <h2 class="title" id="projects-title">Projects</h2>
+            </div>
+            <div class="project-note">
+                <p>Project details are being added. You can explore my work on GitHub in the meantime.</p>
+                <a class="text-link" href="https://github.com/Brian-Korir"
+                    target="_blank" rel="noopener noreferrer">Visit my GitHub profile ↗</a>
+            </div>
+        </section>
 
+        <section id="contact" aria-labelledby="contact-title">
+            <div class="contact-card">
+                <div class="section-heading">
+                    <p class="section__text__p1">Have a project in mind?</p>
+                    <h2 class="title" id="contact-title">Let's connect</h2>
+                </div>
+                <p>Find me on LinkedIn or explore what I'm building on GitHub.</p>
+                <div id="socials-container" aria-label="Contact profiles">
+                    <a class="btn btn-color-2" href="https://www.linkedin.com/in/brian-korir-467521363/"
+                        target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                    <a class="btn btn-color-1" href="https://github.com/Brian-Korir"
+                        target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="current-year"></span> Brian Korir. Built with HTML, CSS &amp; JavaScript.</p>
+    </footer>
 </body>
 </html>
